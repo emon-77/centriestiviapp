@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistenza — CentriEstivi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F6F1E4;
+    --teal:#0B5D66;
+    --teal-dark:#073F45;
+    --coral:#DD7A45;
+    --coral-dark:#B85826;
+    --charcoal:#22281F;
+    --charcoal-soft:#4A5147;
+    --border-tan:#E4DAC5;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--charcoal);
+    font-family:'Inter',sans-serif;
+    line-height:1.65;
+  }
+  h1,h2,.display{
+    font-family:'Fredoka',sans-serif;
+    font-weight:600;
+    color:var(--teal-dark);
+    margin:0;
+  }
+  header.top{
+    padding:28px 32px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    max-width:840px;
+    margin:0 auto;
+  }
+  header.top .sun{font-size:22px;}
+  header.top .word{font-family:'Fredoka',sans-serif;font-weight:600;font-size:18px;color:var(--teal-dark);}
+  header.top a.back{margin-left:auto;color:var(--teal-dark);font-size:14px;font-weight:500;text-decoration:underline;text-underline-offset:3px;}
+
+  main{max-width:840px;margin:0 auto;padding:8px 32px 80px;}
+
+  .intro{padding:12px 0 32px;border-bottom:1px solid var(--border-tan);margin-bottom:32px;}
+  .intro h1{font-size:32px;margin-bottom:10px;}
+  .intro p{color:var(--charcoal-soft);font-size:15.5px;margin:0;}
+  .updated{font-size:13px;color:var(--coral-dark);font-weight:600;margin-top:14px;}
+
+  section.block{margin-bottom:34px;}
+  section.block h2{font-size:19px;margin-bottom:12px;}
+  section.block p, section.block li{color:var(--charcoal-soft);font-size:15px;}
+  section.block ul{margin:8px 0 0;padding-left:20px;}
+  section.block li{margin-bottom:6px;}
+  section.block strong{color:var(--charcoal);}
+  section.block a{color:var(--coral-dark);font-weight:600;text-decoration:underline;text-underline-offset:3px;}
+
+  .contact-box{
+    background:var(--card);
+    border:1px solid var(--border-tan);
+    border-radius:16px;
+    padding:22px 24px;
+    text-align:center;
+  }
+  .contact-box a.mail{
+    display:inline-block;margin-top:8px;
+    background:var(--teal);color:#fff;text-decoration:none;font-weight:700;
+    padding:10px 22px;border-radius:999px;font-size:14.5px;
+  }
+
+  footer{padding:32px;text-align:center;font-size:12.5px;color:var(--charcoal-soft);border-top:1px solid var(--border-tan);}
+  footer a{color:var(--charcoal-soft);}
+
+  details{border-bottom:1px solid var(--border-tan);padding:14px 0;}
+  details:last-of-type{border-bottom:none;}
+  summary{font-family:'Fredoka',sans-serif;font-weight:600;font-size:16px;color:var(--teal-dark);cursor:pointer;list-style:none;}
+  summary::-webkit-details-marker{display:none;}
+  summary::before{content:"▸";color:var(--coral);margin-right:8px;display:inline-block;transition:transform .15s ease;}
+  details[open] summary::before{transform:rotate(90deg);}
+  details p{margin:10px 0 0 22px;color:var(--charcoal-soft);font-size:15px;}
+  .faq-card{background:var(--card);border:1px solid var(--border-tan);border-radius:16px;padding:6px 24px;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <span class="sun">☀️</span>
+  <span class="word">CentriEstivi</span>
+  <a href="index.html" class="back">← Torna alla home</a>
+</header>
+
+<main>
+  <div class="intro">
+    <h1>Assistenza</h1>
+    <p>Hai una domanda sull'app, hai trovato un'informazione da correggere o gestisci un centro estivo? Scrivici: rispondiamo di solito entro 1-2 giorni lavorativi.</p>
+  </div>
+
+  <div class="contact-box" style="margin-bottom:40px">
+    <div style="font-family:'Fredoka',sans-serif;font-weight:600;color:var(--teal-dark);font-size:18px">Contatta l'assistenza</div>
+    <a class="mail" href="mailto:centriestivi.support@gmail.com?subject=Assistenza%20CentriEstivi">✉️ centriestivi.support@gmail.com</a>
+    <p style="font-size:13.5px;color:var(--charcoal-soft);margin:12px 0 0">Indica il modello di iPhone o iPad, la versione dell'app e, se riguarda un centro, il suo nome e il comune.</p>
+  </div>
+
+  <section class="block">
+    <h2>Domande frequenti per le famiglie</h2>
+    <div class="faq-card">
+      <details><summary>L'app è gratuita?</summary><p>Sì. CentriEstivi è gratuita e non richiede registrazione né account. L'app mostra alcuni annunci pubblicitari per sostenere il progetto.</p></details>
+      <details><summary>Quali zone copre?</summary><p>Oggi l'Emilia-Romagna e il Veneto, con oltre 2.000 centri estivi. Puoi cambiare zona in qualsiasi momento toccando la zona in alto nella schermata di ricerca.</p></details>
+      <details><summary>Da dove arrivano i dati dei centri?</summary><p>Dagli albi e dagli elenchi ufficiali di Comuni e Regioni, integrati con i dati inviati direttamente dai centri. I centri che hanno confermato le proprie informazioni mostrano il badge "✓ Confermato dal centro".</p></details>
+      <details><summary>Le date di un centro sono dell'anno scorso, è normale?</summary><p>Sì: finché un centro non ci invia le date della nuova estate, mostriamo quelle dell'anno precedente come riferimento, con l'indicazione "Info in aggiornamento". Per iscrizioni e conferme contatta sempre direttamente il centro.</p></details>
+      <details><summary>Ho trovato un'informazione sbagliata</summary><p>Scrivici a <a href="mailto:centriestivi.support@gmail.com">centriestivi.support@gmail.com</a> indicando il nome del centro e cosa correggere: la verifichiamo e la aggiorniamo.</p></details>
+      <details><summary>Come gestisco le preferenze sulla pubblicità?</summary><p>Dalla voce "Gestisci privacy" nelle impostazioni dell'app puoi modificare in qualsiasi momento il consenso dato al primo avvio. Trovi tutti i dettagli nell'<a href="privacy.html">informativa sulla privacy</a>.</p></details>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Domande frequenti per i centri estivi</h2>
+    <div class="faq-card">
+      <details><summary>Il mio centro è già nell'app?</summary><p>Molto probabilmente sì, se compare in un elenco comunale o regionale. Cercalo per nome o comune nell'app.</p></details>
+      <details><summary>Come aggiorno la scheda del mio centro?</summary><p>Puoi usare il modulo "Registra il tuo centro" nell'app oppure scriverci a <a href="mailto:centriestivi.support@gmail.com">centriestivi.support@gmail.com</a> con date, orari, costi e contatti. Dopo la verifica la scheda mostrerà il badge "✓ Confermato dal centro".</p></details>
+      <details><summary>Quanto costa essere presenti nell'app?</summary><p>Niente: la presenza nell'app è gratuita per i centri e per le famiglie, senza alcun obbligo.</p></details>
+      <details><summary>Voglio rimuovere il mio centro</summary><p>Scrivici indicando il nome del centro: lo rimuoviamo o correggiamo i dati come preferisci.</p></details>
+    </div>
+    <p style="margin-top:16px">Maggiori informazioni per i gestori: <a href="centri.html">CentriEstivi per i centri</a>.</p>
+  </section>
+
+  <section class="block">
+    <h2>Scarica l'app</h2>
+    <p>CentriEstivi è disponibile gratuitamente su App Store per iPhone e iPad: <a href="https://apps.apple.com/app/id6787093619">apri su App Store</a>.</p>
+  </section>
+</main>
+
+<footer>
+  CentriEstivi — <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="mailto:centriestivi.support@gmail.com">centriestivi.support@gmail.com</a>
+</footer>
+
+</body>
+</html>
